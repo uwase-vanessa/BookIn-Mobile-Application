@@ -1,53 +1,84 @@
-# Welcome to your Expo app 👋
+# BookIn 📚 to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+BookIn is a mobile-first library and book borrowing app built with [Expo](https://expo.dev/), [React Native](https://reactnative.dev/), and [TypeScript](https://www.typescriptlang.org/). It features user authentication, book browsing, notifications, and a modern UI with [Tailwind CSS](https://tailwindcss.com/) via [NativeWind](https://www.nativewind.dev/).
 
-## Get started
+## Features
 
-1. Install dependencies
+- 📖 Browse and search books
+- 🛒 Add books to cart and borrow
+- 👤 User authentication (login/register)
+- 🔔 Notifications and events
+- 🎨 Light/dark mode support
+- 🖼️ Custom SVG icons and themed components
+- 🏷️ Category and service listings
 
-   ```bash
-   npm install
-   ```
+## Project Structure
 
-2. Start the app
+```
+.
+├── app/                # App entry, routing, screens, and services
+├── components/         # Reusable UI components and SVGs
+├── constants/          # Static data and color definitions
+├── hooks/              # Custom React hooks
+├── types/              # TypeScript types and image declarations
+├── assets/             # Images, fonts, and icons
+├── global.css          # Tailwind and global styles
+├── tailwind.config.js  # Tailwind/NativeWind config
+├── metro.config.js     # Metro bundler config
+├── package.json        # Project dependencies and scripts
+└── ...
+```
 
-   ```bash
-   npx expo start
-   ```
+## Getting Started
 
-In the output, you'll find options to open the app in a
+### 1. Install dependencies
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+```sh
+npm install
+```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### 2. Start the development server
 
-## Get a fresh project
+```sh
+npx expo start
+```
 
-When you're ready, run:
+You can open the app in:
 
-```bash
+- Expo Go (scan QR code)
+- Android/iOS simulator
+- Web browser
+
+### 3. Lint your code
+
+```sh
+npm run lint
+```
+
+### 4. Reset the project (optional)
+
+To reset to a blank starter, run:
+
+```sh
 npm run reset-project
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Customization
 
-## Learn more
+- **Theming:** Edit colors in [`constants/Colors.ts`](constants/Colors.ts) and [`tailwind.config.js`](tailwind.config.js).
+- **SVG Icons:** Add or edit SVGs in [`components/svgs/`](components/svgs/index.ts).
+- **API:** Update API endpoints in [`app/services/api.tsx`](app/services/api.tsx).
 
-To learn more about developing your project with Expo, look at the following resources:
+## Learn More
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- [Expo Documentation](https://docs.expo.dev/)
+- [NativeWind Documentation](https://www.nativewind.dev/)
+- [Expo Router](https://docs.expo.dev/router/introduction/)
 
-## Join the community
+## License
 
-Join our community of developers creating universal apps.
+This project is for educational purposes.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
 
-
-An interface definition in TypeScript specifies the structure and types of properties that an object or class must have, serving as a contract for how data should be shaped.
+*Built with ❤️ using Expo, React Native, and TypeScript.*
