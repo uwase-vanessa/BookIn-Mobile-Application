@@ -1,0 +1,21 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts",
+    "nativewind-env.d.ts"
+  ]
+}
+
+//The tsconfig.json file configures TypeScript for your project. It sets compiler options (like strict type checking), defines path aliases
+//(e.g., @/ for your project root), and tells TypeScript which files to include. This ensures consistent type checking and helps your editor and build tools understand and work with yo
